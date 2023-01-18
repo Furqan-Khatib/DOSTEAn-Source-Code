@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Carousel />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue";
+import Carousel from "./components/carousel.vue";
+import Tilemenudrink from "./components/Tilemenudrink.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Carousel,
+    Tilemenudrink,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+.app {
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(237, 195, 182);
+}
+.container {
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 </style>
