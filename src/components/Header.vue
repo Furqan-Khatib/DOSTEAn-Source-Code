@@ -96,6 +96,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@font-face {
+  font-family: "bastia-boldregular";
+  src: url("../assets/webfontkit-20230119-095416/bastia-bold-webfont.woff2")
+      format("woff2"),
+    url("../assets/webfontkit-20230119-095416/bastia-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   background-color: rgb(47, 30, 23);
   z-index: 99;
@@ -103,6 +112,7 @@ header {
   position: fixed;
   transition: 0.5s ease all;
   color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 
   nav {
     position: relative;
@@ -150,10 +160,10 @@ header {
 
       h1 {
         font-size: 46px;
+        font-family: "bastia-boldregular";
         margin-bottom: 0px;
       }
     }
-
     .navigation {
       display: flex;
       align-items: center;

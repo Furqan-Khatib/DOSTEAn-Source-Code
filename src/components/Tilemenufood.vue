@@ -7,7 +7,7 @@
           font-weight: bold;
         "
       >
-        Quick Menu
+        Quick Drink
       </h2>
       <div class="slide-content">
         <div class="card-wrapper swiper-wrapper">
@@ -106,7 +106,7 @@
 import { onMounted } from "vue";
 
 export default {
-  name: "Tilemenudrink",
+  name: "Tilemenufood",
   data() {},
   mounted() {
     var swiper = new Swiper(".slide-content", {
@@ -150,11 +150,11 @@ export default {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  margin-top: 210px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffc2a9;
+  background-color: #f4d5d5;
   border-radius: 16px;
 }
 .slide-container {
@@ -169,11 +169,11 @@ export default {
 }
 .card {
   border-radius: 25px;
-  background-color: #ffc2a9;
+  background-color: #f4d5d5;
   width: 320px;
   height: 200px;
   margin: 25px;
-  border-color: #ffc2a9;
+  border-color: #f4d5d5;
 }
 .image-content,
 .card-content {

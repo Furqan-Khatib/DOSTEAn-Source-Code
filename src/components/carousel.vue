@@ -44,7 +44,7 @@
         </template>
       </b-carousel-slide>
 
-      <b-carousel-slide caption="some text" text="some more text">
+      <b-carousel-slide caption="#Flavours" text="Eat, Drink and be Merry">
         <template v-slot:img>
           <img
             class="d-block img-fluid w-100"
